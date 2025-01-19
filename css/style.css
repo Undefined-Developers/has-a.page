@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'ChakraPetch';
+    src: url('/font/ChakraPetch-Regular.ttf') format('truetype'); /* Truetype-Schriftart */
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ChakraPetch', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #2a1b3d 0%, #1a2b4d 100%);
+    min-height: 100vh;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    background-image: url('https://cdn.rizzmail.wtf/u/WdJm9AbfklJ1t9m.png');
+    background-size: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.nav-links a {
+    color: #ffffff80;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #ffffff80;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.icon-container {
+    position: relative;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.icon-container:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.icon-container i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.icon-container:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wave {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #2c2c2c;
+    border-radius: 100% 100% 0 0;
+}
+
+/* Discord-specific styling */
+.discord {
+    background: rgba(88, 101, 242, 0.2);
+}
+
+.discord:hover {
+    background: rgba(88, 101, 242, 0.3);
+}
+
+/* Telegram-specific styling */
+.telegram {
+    background: rgba(0, 136, 204, 0.2);
+}
+
+.telegram:hover {
+    background: rgba(0, 136, 204, 0.3);
+}

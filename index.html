@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>has-a.page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"></div>
+        <div class="nav-links">
+            <!--<a href="/">Home</a>-->
+            <a href="https://mr.stuffmaker.net/donate" target="_blank">Donate</a>
+            <a href="#">About</a>
+            <a href="#">Get</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1 id="dynamic-title">has-a.page</h1>
+        <p class="description" id="dynamic-description">A platform for creating and sharing your digital presence. Join our community and start your journey today.</p>
+        <div class="social-icons">
+            <div class="icon-container discord">
+                <a href="https://discord.fish/page" target="_blank"><i class="fab fa-discord"></i></a>
+                <span class="tooltip">Register on Discord (Slower)</span>
+            </div>
+            <div class="icon-container telegram">
+                <a href="https://t.me/m/NY5YqAftNGQy" target="_blank"><i class="fab fa-telegram"></i></a>
+                <span class="tooltip">Register on Telegram (Fastest)</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="wave"></div>
+
+    <script>
+        const titles = [
+            "has-a.page",
+            "Create Your Space",
+            "Share Your Story",
+            "Build Your Presence"
+        ];
+
+        const descriptions = [
+            "A platform for creating and sharing your digital presence. Join our community and start your journey today.",
+            "Design and customize your own digital space with our intuitive tools and features.",
+            "Connect with others and share your unique perspective with the world.",
+            "Establish your online identity with our powerful platform."
+        ];
+
+        let currentIndex = 0;
+        const titleElement = document.getElementById('dynamic-title');
+        const descriptionElement = document.getElementById('dynamic-description');
+
+        function updateContent() {
+            titleElement.style.opacity = '0';
+            descriptionElement.style.opacity = '0';
+            
+            setTimeout(() => {
+                titleElement.textContent = titles[currentIndex];
+                descriptionElement.textContent = descriptions[currentIndex];
+                
+                titleElement.style.opacity = '1';
+                descriptionElement.style.opacity = '1';
+                
+                currentIndex = (currentIndex + 1) % titles.length;
+            }, 500);
+        }
+
+        titleElement.style.transition = 'opacity 0.5s ease';
+        descriptionElement.style.transition = 'opacity 0.5s ease';
+
+        setInterval(updateContent, 5000);
+    </script>
+</body>
+</html>
