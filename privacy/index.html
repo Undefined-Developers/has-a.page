@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - has-a.page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #2a1b3d 0%, #1a2b4d 100%);
+            min-height: 100vh;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://cdn.stuffmaker.wtf/u/0DSlnnESqzCyOpB.png');
+            background-size: cover;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #ffffff80;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: white;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .wave {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: #2c2c2c;
+            border-radius: 100% 100% 0 0;
+        }
+        .social-icons {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            justify-content: center;
+        }
+
+        .icon-container {
+            position: relative;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .icon-container:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .icon-container i {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .tooltip {
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .icon-container:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Telegram-specific styling */
+        .telegram {
+            background: rgba(0, 136, 204, 0.2);
+        }
+
+        .telegram:hover {
+            background: rgba(0, 136, 204, 0.3);
+        }
+
+        /* Email-specific styling */
+        .email {
+            background: rgba(234, 67, 53, 0.2);
+        }
+
+        .email:hover {
+            background: rgba(234, 67, 53, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"></div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="https.//mr.stuffmaker.net/donate" target="_blank">Donate</a>
+            <!--<a href="#">Privacy</a>-->
+            <a href="/terms">Terms</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Privacy Policy</h1>
+        <p>Last updated: February 1st, 2025</p>
+
+        <h2>1. Introduction</h2>
+        <p>Welcome to has-a.page. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.</p>
+
+        <h2>2. Information We Collect</h2>
+        <p>We only collect and safely store your email adress and IP adress of your webhost so we can associate you with your domain.</p>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>We only use it to associate it with your account as stated in the second paragraph</p>
+
+        <h2>4. Sharing of Your Information</h2>
+        <p>We do not.</p>
+
+        <h2>5. Security</h2>
+        <p>Your data is safely stored on a document on a local device. No third-party services are used.</p>
+
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us using one of the methods below:</p>
+
+        <div class="social-icons">
+            <div class="icon-container telegram">
+                <a href="https://t.me/remzcore" target="_blank">
+                <i class="fab fa-telegram"></i></a>
+                <span class="tooltip">Contact me on Telegram</span>
+            </div>
+            <div class="icon-container email">
+                <a href="mailto:support@stuffmaker.org">
+                <i class="fas fa-envelope"></i></a>
+                <span class="tooltip">Email us</span>
+                
+            </div>
+        </div>
+    </div>
+    <!--<div class="wave"></div>-->
+</body>
+</html>
+

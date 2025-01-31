@@ -11,7 +11,9 @@
     box-sizing: border-box;
     font-family: 'ChakraPetch', sans-serif;
 }
-
+.hreflink {
+    color: green; 
+}
 body {
     background: linear-gradient(135deg, #2a1b3d 0%, #1a2b4d 100%);
     min-height: 100vh;
